@@ -42,7 +42,7 @@ pandas==1.4.2
 pdfminer.six==20221105
 Pillow==9.1.1
 prompt-toolkit==3.0.29
-protobuf==3.20
+protobuf==3.19
 pydantic==1.10.12
 pydeck==0.8.1b0
 pydub==0.25.1
@@ -67,7 +67,7 @@ setuptools-rust
 six==1.16.0
 streamlit==1.27.0
 tensorboard-plugin-wit==1.8.1
-tensorflow-cpu==2.9.1
+# tensorflow-cpu==2.9.1
 tensorflow-text==2.9.0
 tiktoken==0.3.3
 tinycss2==1.1.1
