@@ -177,7 +177,6 @@ python-ffmpeg==2.0.4
 python-iso639==2023.6.15
 python-magic==0.4.27
 python-multipart==0.0.6
-pywin32==304
 pywinpty==2.0.5
 PyYAML==6.0.1
 pyzmq==23.1.0
