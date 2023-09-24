@@ -4,8 +4,6 @@
 <div align="center">
 
 [![Status](https://img.shields.io/badge/status-active-success.svg)]()
-[![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)
-
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -101,6 +99,18 @@ Deployment can be done on Streamlit
 - [Chroma](https://www.trychroma.com/) - Vector Database
 - [FAISS](https://github.com/facebookresearch/faiss) - Semantic Search
 - [Streamlit](https://streamlit.io/) - GUI Interface
+
+## 🖥️ Open Source Usage <a name = "open_source"></a>
+- HuggingFace Models
+    1. TheBloke/Llama-2-7b-Chat-GGUF
+    2. TheBloke/Llama-2-13b-Chat-GGUF
+    2. TheBloke/vicuna-13B-v1.5-16K-GGUF
+
+- HuggingFace Embeddings
+    1. hkunlp/instructor-large
+    2. all-MiniLM-L6-v2
+    3. intfloat/e5-base-v2
+
 
 ## 🎉 Acknowledgements <a name = "acknowledgement"></a>
 
