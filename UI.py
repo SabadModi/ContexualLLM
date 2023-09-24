@@ -253,7 +253,7 @@ if __name__ == "__main__":
             EMBEDDING_MODEL_NAME = "intfloat/e5-base-v2"
             
         running = st.sidebar.selectbox('Do you want to run on: ', ['cpu', 'cuda', 'mps'], key='running_hardware')
-        temp = st.sidebar.slider('temperature', min_value=0.01, max_value=5.0, value=0.1, step=0.01)
+        temp = st.sidebar.slider('temperature', min_value=0.01, max_value=1.0, value=0.1, step=0.01)
         topp = st.sidebar.slider('top_p', min_value=0.01, max_value=1.0, value=0.9, step=0.01)
         def generate():
             import os, shutil
