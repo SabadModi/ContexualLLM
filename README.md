@@ -69,7 +69,6 @@ pip install -r requirements.txt
 Install Llama-CPP to load models etc.
 ```
 pip install llama-cpp-python
-
 ```
 
 After downloading all these requirements, we will launch the UI
@@ -85,6 +84,8 @@ python streamlit -m UI.py
 3. You can select the model for embeddings and LLM
 4. Tune the hyperparameters
 5. Interact with the LLM and enjoy :)
+
+![Alt text](image.png)
 
 (On changing the embedding model, you would need to delete the `/DB` file manually, and then proceed.)
 
