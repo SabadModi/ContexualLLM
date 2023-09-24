@@ -1,7 +1,6 @@
 from langchain.memory import ConversationBufferMemory
 from langchain.prompts import PromptTemplate
 
-
 # for llama2
 system_prompt = """ You are a helpful, respectful and honest assistant. 
     Always answer as helpfully as possible, while being safe. Your answers should not include any harmful
@@ -10,7 +9,6 @@ system_prompt = """ You are a helpful, respectful and honest assistant.
     or is not factually coherent, explain why instead of answering something not correct. 
     If you don't know the answer to a question, please don't share false information.
 """
-
 
 def get_prompt_template(system_prompt=system_prompt, promptTemplate_type=None, history=False):
 

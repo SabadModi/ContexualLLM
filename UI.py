@@ -1,7 +1,5 @@
-import json
 import os
 import logging
-import pypandoc
 from langchain.chains import RetrievalQA
 from langchain.embeddings import HuggingFaceInstructEmbeddings
 from langchain.llms import HuggingFacePipeline
@@ -22,10 +20,11 @@ import os
 import numpy as np
 import whisper
 import datetime
-from bson import json_util
 
 from pydub import AudioSegment
 import pandas as pd
+
+import docx2txt
 
 # change the link to the location of tesseract locally
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
@@ -221,7 +220,9 @@ if __name__ == "__main__":
                     f.write(raw_text)
                     
             elif(files[i].name.split('.')[1] == 'doc' or files[i].name.split('.')[1] == 'docx'):
-                pypandoc.convert_file(files[i].name, 'plain', outputfile="SOURCE_DOCUMENTS/"+files[i].name.split(".")[0]+".txt")
+                raw_text = docx2txt.process(files[i])
+                with open("SOURCE_DOCUMENTS/"+files[i].name.split('.')[0]+".txt", "w") as f:
+                    f.write(raw_text)
             
             elif(files[i].name.split('.')[1] == 'pdf'):
                 with open("SOURCE_DOCUMENTS/"+files[i].name, "wb") as w:

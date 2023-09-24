@@ -1,2 +1,4 @@
 /models
 /DB
+inputs/*
+SOURCE_DOCUMENTS/*

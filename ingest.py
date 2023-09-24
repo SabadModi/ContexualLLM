@@ -84,7 +84,6 @@ def split_documents(documents: list[Document]) -> tuple[list[Document], list[Doc
 
     return text_docs, python_docs
 
-
 @click.command()
 @click.option(
     "--device_type",
